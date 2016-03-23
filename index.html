@@ -1,15 +1,17 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Eventos Fi</title>
+<!--Foundation things-->
 <link rel="stylesheet" href="css/foundation/foundation.min.css">
 <link rel="stylesheet" type="text/css" href="css/orbit.css">
 <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+<!--DatePicker:-->
+<link rel="stylesheet" type="text/css" href="css/foundation/foundation-datepicker.css">
+<!--Intentando acomodar-->
 <link rel="stylesheet" type="text/css" href="css/my.css">
-
-
 </head>
 <body>
 <div class="top-bar">
@@ -70,14 +72,12 @@
       </label>
     </div>
     <div class="large-3 columns">
-      <label>Rango fecha
-        <select>
-          <option value="husker">Husker</option>
-          <option value="starbuck">Starbuck</option>
-          <option value="hotdog">Hot Dog</option>
-          <option value="apollo">Apollo</option>
-        </select>
-      </label>
+      <label>Rango fecha</label>
+      <div class="row">
+          <div class="medium-6 large-6 columns"><input id="dp1" class="span2" type="text"></input></div>
+          <div class="medium-3 large-3 columns"></div>
+          <div class="medium-6 large-6 columns"><input id="dp2" class="span2" type="text"></input></div>
+      </div>
     </div>
      <div class="large-3 columns">
      	<a href="#" class="button round" id="button1">Round Button</a>
@@ -226,12 +226,25 @@
       </div>
     </form>
 </div>
+
+<!--Foundation things-->
 <script src="js/foundation/jquery-2.1.4.min.js"></script>
 <script src="js/foundation/foundation.js"></script>
-<script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
+<script src="js/foundation/foundation-datepicker.js"></script>
 <script>
       $(document).foundation();
-  </script>
+      $('#dp1').fdatepicker({
+          initialDate: '02-12-2016',
+          format: 'mm-dd-yyyy',
+          disableDblClickSelection: true
+        });
+        $('#dp2').fdatepicker({
+          initialDate: '02-12-2016',
+          format: 'mm-dd-yyyy',
+          disableDblClickSelection: true
+        });
+</script>
+<!--Intentando acomodar-->
 <script src="js/my.js"></script>
 </body>
 </html>

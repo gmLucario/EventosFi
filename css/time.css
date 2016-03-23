@@ -1,0 +1,149 @@
+/*------------------------------------
+
+ timeline styles
+
+------------------------------------*/
+
+.path-container .path-item h1 {
+  text-align: center;
+}
+
+.path-container .path-item p {
+
+  font-size: emCalc(16px);
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+
+}
+
+.path-container .path-item a {
+
+  font-weight: bold;
+
+  font-size: emCalc(14px);
+
+}
+
+.path-container .path-item .circle {
+
+  background-color: #FA9292;
+
+  background-size: 156px 156px;
+
+  border-radius: 50%;
+
+  width: 156px;
+
+  height: 156px;
+
+  position: relative;
+
+  margin-bottom: 180px;
+
+  z-index: 2;
+
+}
+
+.path-container .path-item .circle.circle-left {
+
+  left: 10%;
+
+}
+
+.path-container .path-item .circle.circle-right {
+
+  right: -10px;
+
+}
+
+
+/*------------------------------------
+
+ medium timeline styles
+
+------------------------------------*/
+
+@media only screen and (max-width: 990px) and (min-width: 768px) {
+
+  .large-5.columns.path-text {
+    width: 70%;
+    right: 0;
+    margin-left: 20px;
+  }
+
+
+
+  .path-item .large-7 {
+
+    width: 25%;
+
+  }
+
+
+
+  .push-5 {
+
+    left: 0;
+
+    float: right;
+
+  }
+
+
+
+  .circle-right {
+
+    float: left;
+
+    right: 0px !important;
+
+  }
+
+
+
+  .circle-left {
+
+    left: 0px !important;
+
+  }
+
+}
+
+/*------------------------------------
+
+ mobile timeline styles
+
+------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+  .path-container {
+
+    text-align: center;
+
+  }
+
+  .path-container .circle {
+
+    top: 0;
+
+    right: 0;
+
+    left: 0;
+
+    float: none;
+
+    margin-bottom: 30px !important;
+
+    margin-top: 60px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+  }
+
+}
+
