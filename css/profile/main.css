@@ -2412,8 +2412,8 @@
 						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
-						content: '\f0c9';
-						color: #D832DD;
+						content: '+';
+						background-color: #3D15BC;
 						font-size: 18px;
 						line-height: 2.25em;
 						background: rgba(128, 136, 144, 0.5);
