@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/eventlist.css">
     <link rel="stylesheet" type="text/css" href="../css/profile/my.css">
     <link rel="stylesheet" type="text/css" href="../css/foundation/foundation.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   </head>
   <body>
 
@@ -22,7 +23,7 @@
 
           <!-- Logo -->
             <div id="logo">
-              <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+              <a href="../index.html"><span class="image avatar48"><img src=""/></span></a>
               <h1 id="userName">User Name</h1>
             </div>
 
@@ -30,9 +31,9 @@
             <nav id="nav">
               <ul>
                 <li><a href="#top" id="top-link">EventosAgendados</a></li>
-                <li><a href="#portfolio">EventosDivision</a></li>
-                <li><a href="#about" >Usuario</a></li>
-                <li><a href="#contact">Home</a></li>
+                <li><a href="#portfolio" id="portfolio-link">EventosDivision</a></li>
+                <li><a href="#about" id="about-link">UserInfo</a></li>
+                <li><a href="../index.html">Home</a></li>
               </ul>
             </nav>
 
@@ -95,72 +96,83 @@
       </section>
 
         <!-- Portfolio -->
-          <section id="portfolio" class="two">
+          <section id="about" class="three">
             <div class="container">
                     
             </div>
           </section>
-
-        <!-- About Me -->
-          <section id="about" class="three">
-            <div class="container">
-
-              <header>
-                <h2>About Me</h2>
-              </header>
-
-              <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-              <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-              ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-              laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-              parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-              dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-              ornare iaculis.</p>
-
-            </div>
-          </section>
-
-        <!-- Contact -->
           <section id="contact" class="four">
             <div class="container">
-
-              <header>
-                <h2>Contact</h2>
-              </header>
-
-              <p>Elementum sem parturient nulla quam placerat viverra
-              mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-              donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-              orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-              <form method="post" action="#">
-                <div class="row">
-                  <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-                  <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-                  <div class="12u$">
-                    <textarea name="message" placeholder="Message"></textarea>
-                  </div>
-                  <div class="12u$">
-                    <input type="submit" value="Send Message" />
-                  </div>
-                </div>
-              </form>
-
+                <form>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <div class="row collapse">
+                        <div class="small-3 columns">
+                          <label><h5>Editar Usuario</h5></label>
+                        </div>
+                          <div class="small-7 columns">
+                            <input type="text" placeholder="Cambiar Usuario">
+                          </div>
+                        <div class="small-2 columns">
+                        <a href="#" class="button postfix">Cambiar</a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <div class="row collapse">
+                        <div class="small-3 columns">
+                          <label><h5>Editar Contraseña</h5></label>
+                        </div>
+                          <div class="small-7 columns">
+                            <input type="text" placeholder="Password">
+                          </div>
+                        <div class="small-2 columns">
+                        <a href="#" class="button postfix">Cambiar</a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                </form>
             </div>
-          </section>
-
+          </section>  
       </div>
 
     <!-- Footer -->
-      <div id="footer">
-
-        <!-- Copyright -->
-          <ul class="copyright">
-            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-
-      </div>
+        <footer class="footer">
+    <div class="row">
+    <div class="small-12 medium-6 large-5 columns">
+      <p class="logo"><i class="fi-shield"></i>Proteco Fi</p> 
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Contact</a>
+      </p>
+      <p class="copywrite">Copywrite© 2016</p>
+    </div>
+    <div class="small-12 medium-6 large-4 columns">
+      <ul class="contact">
+        <li><p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p></li>
+        <li><p><i class="fi-telephone"></i>+1-656-453-9966</p></li>
+        <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
+      </ul>
+    </div>
+    <div class="small-12 medium-12 large-3 columns">
+      <p class="about">About Star Wars</p>
+      <p class="about subheader">Strike me down, and I will become more powerful than you could possibly imagine.</p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="#"><i class="fi-social-twitter"></i></a>
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="#"><i class="fi-social-github"></i></a>
+      </ul>
+    </div>
+  </div>
+</footer>
 
     <!-- Scripts -->
      <script src="../js/profile/jquery.min.js"></script>
