@@ -1,32 +1,26 @@
 <!DOCTYPE HTML>
-<!--
-  Prologue by HTML5 UP
-  html5up.net | @n33co
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>User</title>
     <meta charset="utf-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/profile/main.css" />
     <link rel="stylesheet" type="text/css" href="../css/eventlist.css">
     <link rel="stylesheet" type="text/css" href="../css/profile/my.css">
     <link rel="stylesheet" type="text/css" href="../css/foundation/foundation.min.css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-  </head>
-  <body>
 
+    <link rel="stylesheet" type="text/css" href="../css/profile/jquery.bxslider.css">
+    <script src="../js/profile/jquery.bxslider.min.js"></script>
+   </head>
+  <body>
     <!-- Header -->
       <div id="header">
-
         <div class="top">
-
-          <!-- Logo -->
+           <!-- Logo -->
             <div id="logo">
               <a href="../index.html"><span class="image avatar48"><img src=""/></span></a>
               <h1 id="userName">User Name</h1>
             </div>
-
           <!-- Nav -->
             <nav id="nav">
               <ul>
@@ -36,13 +30,10 @@
                 <li><a href="../index.html">Home</a></li>
               </ul>
             </nav>
-
         </div>
 
         <div class="bottom">
-
         </div>
-
       </div>
 
     <!-- Main -->
@@ -96,12 +87,24 @@
       </section>
 
         <!-- Portfolio -->
-          <section id="about" class="three">
+          <section id="portfolio" class="three">
             <div class="container">
-                    
+              <div class="boxSlider">
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar1"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar2"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar3"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar4"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar5"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar6"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar7"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar8"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar9"></div>
+                <div class="slide"><img src="http://placehold.it/300x150&text=FooBar10"></div>
+              </div>
             </div>
           </section>
-          <section id="contact" class="four">
+
+          <section id="about" class="four">
             <div class="container">
                 <form>
                     <div class="row">
@@ -175,12 +178,23 @@
 </footer>
 
     <!-- Scripts -->
-     <script src="../js/profile/jquery.min.js"></script>
+     
      <script src="../js/profile/jquery.scrolly.min.js"></script>
      <script src="../js/profile/jquery.scrollzer.min.js"></script>
      <script src="../js/profile/skel.min.js"></script>
      <script src="../js/profile/util.js"></script>
      <script src="../js/profile/main.js"></script>
      <script src="../js/profile/my.js"></script>
+     <script>
+  $(document).ready(function(){
+  $('.boxSlider').bxSlider({
+    slideWidth: 300,
+    minSlides: 2,
+    maxSlides: 3,
+    moveSlides: 1,
+    slideMargin: 10
+  });
+});
+</script>
   </body>
 </html>
